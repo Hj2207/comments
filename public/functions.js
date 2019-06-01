@@ -1,7 +1,7 @@
   const loadComments=()=>{
     document.getElementById('comments').innerHTML= '';
     console.log('hi this is working');
-    fetch('https://git.heroku.com/desolate-taiga-90188.git/helpline')
+    fetch(' https://desolate-taiga-90188.herokuapp.com/helpline')
     .then(res=>res.json())
     .then(data=>data.forEach((comment)=>
           {
@@ -39,7 +39,7 @@
     var name=document.getElementById("name").value;
     var message=document.getElementById("message").value;
 
-   fetch('https://git.heroku.com/desolate-taiga-90188.git:3000/ask', {
+   fetch(' https://desolate-taiga-90188.herokuapp.com/ask', {
      method: 'post',
      headers: {'Content-Type': 'application/json'},
      body: JSON.stringify({
