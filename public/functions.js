@@ -39,7 +39,7 @@
     var name=document.getElementById("name").value;
     var message=document.getElementById("message").value;
 
-   fetch('https://git.heroku.com/desolate-taiga-90188.git/ask', {
+   fetch('https://git.heroku.com/desolate-taiga-90188.git:3000/ask', {
      method: 'post',
      headers: {'Content-Type': 'application/json'},
      body: JSON.stringify({
