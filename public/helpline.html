@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>helpline</title>
+    <link rel="stylesheet" href=".\style.css">
+    <script src="functions.js"></script>
+</head>
+<body onload="loadComments()">
+<div class="container">
+<h1 class="text">Comments</h1>
+
+    <div id="comments" class="card mb-2">
+
+    </div>
+
+    <hr>
+
+    <div id="main-content">
+        <h2>Leave your comments below!</h2>
+        <div id="make-comment">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input style="width:250px;" class="form-control" type="text" id="name" Required>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <label for="message">Type Comment Below!</label> <br><br>
+                <textarea cols="80" rows="12" id="message"  Required></textarea>
+            </div>
+            <br><br>
+            <button type="button" class="btn btn-success" onclick="insertques()">Comment!</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
